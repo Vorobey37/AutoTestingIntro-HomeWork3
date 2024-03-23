@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "308c04ac-a79c-47d6-8437-d2af66f154e4",
+		"name": "HomeWork3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30504936"
+	},
+	"item": [
+		{
+			"name": "GetCountryList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/locations/v1/countries/?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"countries",
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get15DaysOfDailyForecasts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/forecasts/v1/daily/15day/2515394?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"forecasts",
+						"v1",
+						"daily",
+						"15day",
+						"2515394"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get1HourOfHourlyForecasts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function(){\r",
+							"    pm.expect(pm.response.json()[0].IconPhrase).to.eql(\"Clear\");\r",
+							"})\r",
+							"pm.test('Count object = ' + pm.response.json.length, function(){\r",
+							"    pm.expect(pm.response.json.length).to.equal(2);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/forecasts/v1/hourly/1hour/2515394?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"forecasts",
+						"v1",
+						"hourly",
+						"1hour",
+						"2515394"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetIPAddressSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function(){\r",
+							"    pm.expect(pm.response.json().Key).to.eql(\"2515394\");\r",
+							"})\r",
+							"pm.test('Count object = ' + pm.response.json.length, function(){\r",
+							"    pm.expect(pm.response.json.length).to.equal(2);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/locations/v1/cities/ipaddress?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"ipaddress"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCityNeighborsByLocationKey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function(){\r",
+							"    pm.expect(pm.response.json()[0].LocalizedName).to.eql(\"Avtovo\");\r",
+							"})\r",
+							"pm.test('Count object = ' + pm.response.json.length, function(){\r",
+							"    pm.expect(pm.response.json.length).to.equal(2);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/locations/v1/cities/neighbors/2515394?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"cities",
+						"neighbors",
+						"2515394"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSearchByLocationKey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function(){\r",
+							"    pm.expect(pm.response.json().Region.LocalizedName).to.eql(\"Asia\");\r",
+							"})\r",
+							"pm.test('Count object = ' + pm.response.json.length, function(){\r",
+							"    pm.expect(pm.response.json.length).to.equal(2);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/locations/v1/2515394?apikey=fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"2515394"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "fGXJozR43FbXH3uLL7UsJu6dHV9bQkVV"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://dataservice.accuweather.com"
+		}
+	]
+}
