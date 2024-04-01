@@ -1,0 +1,1 @@
+{"uuid":"c6cef80d-e202-489c-9e90-e215b865a2ae","name":"GetCountryListTest","children":["e029a870-3e58-4e1a-a06a-7b2bad38d110"],"befores":[{"name":"initTest","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712001855796,"stop":1712001855796}],"afters":[],"start":1712001855795,"stop":1712001856167}

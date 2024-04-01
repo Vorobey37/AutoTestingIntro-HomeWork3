@@ -1,0 +1,1 @@
+{"uuid":"f095aef5-eec6-4558-b0df-4b9164cd025f","name":"Get1HourOfHourlyForecastsTest","children":["90d09151-473f-408b-a845-d36224dcc134"],"befores":[{"name":"initTest","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712001853937,"stop":1712001853937}],"afters":[],"start":1712001853936,"stop":1712001855151}

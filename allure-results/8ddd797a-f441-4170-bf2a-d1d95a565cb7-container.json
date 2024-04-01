@@ -1,0 +1,1 @@
+{"uuid":"8ddd797a-f441-4170-bf2a-d1d95a565cb7","name":"Get15DaysOfDailyForecastsTest","children":["5b64265c-3046-42b8-a43e-39e27148937b"],"befores":[{"name":"initTest","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1712001851203,"stop":1712001851987}],"afters":[],"start":1712001851163,"stop":1712001853931}
