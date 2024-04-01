@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0f89e2-47f9-4447-ae2b-c4068586dcfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/Get15DaysOfDailyForecastsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/Get15DaysOfDailyForecastsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/Get1HourOfHourlyForecastsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/Get1HourOfHourlyForecastsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/GetCityNeighborsByLocationKeyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/GetCityNeighborsByLocationKeyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/GetCountryListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/GetCountryListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/GetIPAddressSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/GetIPAddressSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework/GetSearchByLocationKeyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework/GetSearchByLocationKeyTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="bf0f89e2-47f9-4447-ae2b-c4068586dcfe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
